@@ -1,4 +1,14 @@
-# TP
+# TC MIP : Génie des Technologies Industrielles S4
+
+
+### <a name="objectifs"></a> objectifs
+
+
+>• Créer, afficher et manipuler des tableaux NumPy.
+ • Utiliser des fonctions NumPy pour effectuer des opérations mathématiques avancées sur les tableaux.
+ • Effectuer des opérations matricielles en utilisant NumPy.
+ • Résoudre des systèmes d'équations linéaires en utilisant la méthode d'élimination de Gauss avec NumPy.
+
 
 Premièrement, installer :
 
@@ -165,6 +175,88 @@ print("Déterminant de mat2 :", determinant_mat2)
 ```shell
 inverse_mat2 = np.linalg.inv(mat2)
 print("Inverse de mat2 :\n", inverse_mat2)
+```
+
+### <a name="exercice-4"></a> Exercice 4
+
+N'oubliez jamais d'installer :
+
+```shell
+import numpy as np
+```
+
+> [!TIP]
+> use `command prompt` to download resources.
+
+
+1. Considérons le système d'équations linéaires suivant :
+    2x + y - z = 5
+    x + 3y + z = 7
+    x - y + 2z = 3
+
+
+```shell
+mat1 = np.array([[1, 2], [3, 4]])
+mat2 = np.array([[5, 6], [7, 8]])
+```
+
+2. Créez une matrice augmentée Aaug en combinant la matrice des coefficients et le vecteur des termes constants.
+
+
+```shell
+A = np.array([[2, 1, -1], [1, 3, 1], [1, -1, 2]])
+b = np.array([5, 7, 3])
+Aaug = np.concatenate((A, b.reshape(-1, 1)), axis=1)
+```
+
+3. Appliquez la méthode d'élimination de Gauss pour transformer la matrice augmentée Aaug en une forme échelonnée.
+
+
+```shell
+def elimination_gauss(Aaug):
+    n = len(Aaug)
+    for i in range(n):
+        # Assurez-vous que le coefficient principal (pivot) est non nul.
+        if Aaug[i, i] == 0:
+            for j in range(i + 1, n):
+                if Aaug[j, i] != 0:
+                    Aaug[[i, j]] = Aaug[[j, i]]
+                    break
+        # Multipliez la ligne i par un facteur approprié pour que le pivot soit 1 (si nécessaire).
+        pivot = Aaug[i, i]
+        Aaug[i] = Aaug[i] / pivot
+        # Soustrayez des multiples de la ligne i des lignes suivantes pour annuler les coefficients en dessous du pivot.
+        for j in range(i + 1, n):
+            facteur = Aaug[j, i]
+            Aaug[j] = Aaug[j] - facteur * Aaug[i]
+    return Aaug
+
+Aaug_echelonnee = elimination_gauss(Aaug.copy())
+print("Matrice augmentée échelonnée :\n", Aaug_echelonnee)
+```
+
+4. Résolvez le système en utilisant la substitution arrière.
+
+
+```shell
+def substitution_arriere(Aaug_echelonnee):
+    n = len(Aaug_echelonnee)
+    x = np.zeros(n)
+    for i in range(n - 1, -1, -1):
+        x[i] = Aaug_echelonnee[i, n] - np.dot(Aaug_echelonnee[i, i + 1:n], x[i + 1:n])
+    return x
+
+solution = substitution_arriere(Aaug_echelonnee)
+print("Solution du système :\n", solution)
+```
+
+5. Vérifiez la solution en calculant Ax et en comparant avec b.
+
+
+```shell
+verification = np.dot(A, solution)
+print("Vérification : Ax =", verification)
+print("b =", b)
 ```
 
 
