@@ -22,7 +22,7 @@ import numpy as np
 > utiliser `command prompt` pour installer resources.
 
 
-### <a name="exercice-1"></a> Exercice 1
+### <a name="exercice-1"></a> Exercice 1: Création, affichage et manipulation de tableaux NumPy
 
 
 1. Créez un tableau NumPy arr1 contenant les nombres de 0 à 9 et affichez-le.
@@ -68,7 +68,7 @@ print("Dimension de arr3:", arr3.ndim)
 ```
 
 
-### <a name="exercice-2"></a> Exercice 2
+### <a name="exercice-2"></a> Exercice 2: Opérations mathématiques avancées
 
 N'oubliez jamais d'installer :
 
@@ -125,7 +125,7 @@ log_naturel_arr3 = np.log(arr3)
 print("Logarithme naturel de arr3:\n", log_naturel_arr3)
 ```
 
-### <a name="exercice-3"></a> Exercice 3
+### <a name="exercice-3"></a> Exercice 3: Opérations matricielles
 
 N'oubliez jamais d'installer :
 
@@ -177,7 +177,7 @@ inverse_mat2 = np.linalg.inv(mat2)
 print("Inverse de mat2 :\n", inverse_mat2)
 ```
 
-### <a name="exercice-4"></a> Exercice 4
+### <a name="exercice-4"></a> Exercice 4: Résolution de systèmes d'équations linéaires par la méthode d'élimination de Gauss
 
 N'oubliez jamais d'installer :
 
