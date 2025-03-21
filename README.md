@@ -1,2 +1,2 @@
-# TP
-TP : Analyse Numerique ( GTI )
+# TPs
+TPs : Analyse Numerique ( GTI )
