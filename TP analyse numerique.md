@@ -23,7 +23,7 @@ import numpy as np
 
 
 </p>
-<h3 align="center">Exercice 1</h3>
+<h3 align="center">Exercice 1 : Création, affichage et manipulation de tableaux NumPy</h3>
 <p align="center">
 </p>
 
@@ -72,7 +72,7 @@ print("Dimension de arr3:", arr3.ndim)
 
 
 </p>
-<h3 align="center">Exercice 2</h3>
+<h3 align="center">Exercice 2 : Opérations mathématiques avancées</h3>
 <p align="center">
 </p>
 
@@ -132,7 +132,7 @@ print("Logarithme naturel de arr3:\n", log_naturel_arr3)
 ```
 
 </p>
-<h3 align="center">Exercice 3</h3>
+<h3 align="center">Exercice 3 : Opérations matricielles</h3>
 <p align="center">
 </p>
 
@@ -187,7 +187,7 @@ print("Inverse de mat2 :\n", inverse_mat2)
 ```
 
 </p>
-<h3 align="center">Exercice 4</h3>
+<h3 align="center">Exercice 4 : Résolution de systèmes d'équations linéaires par la méthode d'élimination de Gauss</h3>
 <p align="center">
 </p>
 
@@ -274,3 +274,11 @@ print("b =", b)
 
 > [!NOTE]
 > Il existe toujours une possibilité d'erreur, nous n'en assumons donc aucune responsabilité.
+>
+> ## <a name="Copyright"></a> Copyright
+tknohamza © 2025
+
+> Merci de nous avoir contactés ici. Si vous avez des commentaires, n'hésitez pas à nous contacter :
+tknohamzacontact@gmail.com
+N'oubliez pas de nous suivre sur :
+<a href="https://facebook.com/tknohamza">Facebook</a>, <a href="https://instagram.com/r/tknohamza">Instagram</a>, <a href="https://twitter.com/tknohamza">Twitter</a>, <a href="https://t.me/tknohamzachannel">Telegram</a>
