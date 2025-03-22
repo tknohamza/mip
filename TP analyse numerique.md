@@ -274,7 +274,7 @@ print("b =", b)
 
 > [!NOTE]
 > Il existe toujours une possibilité d'erreur, nous n'en assumons donc aucune responsabilité.
->
+
 > ## <a name="Copyright"></a> Copyright
 tknohamza © 2025
 
