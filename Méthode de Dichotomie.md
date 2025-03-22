@@ -4,7 +4,7 @@
 ### <a name="objectifs"></a> objectifs
 
 
-> Calculez l'approximation de x par méthode de dichotomie.
+> Calculez l'approximation de x par la méthode de dichotomie.
 
 
 Premièrement, installer :
@@ -20,11 +20,11 @@ import numpy as np
 
 
 </p>
-<h3 align="center">calcule du L & U</h3>
+<h3 align="center">Dichotomie</h3>
 <p align="center">
 </p>
 
-Vous devez vous assurer que le pivot soit toujours ≠ 0 :
+Vous devez vous assurer que f(a) × f(b) toujours < 0 :
 
 ```shell
 def dichotomie(f, a, b, tol=1e-6, max_iter=100):
