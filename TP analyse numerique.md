@@ -32,6 +32,8 @@ import numpy as np
 
 
 ```shell
+import numpy as np
+
 arr1 = np.arange(10)
 print("arr1:", arr1)
 ```
@@ -40,6 +42,8 @@ print("arr1:", arr1)
 
 
 ```shell
+import numpy as np
+
 arr2 = np.zeros((3, 3))
 print("arr2:\n", arr2)
 ```
@@ -49,6 +53,8 @@ print("arr2:\n", arr2)
 
 
 ```shell
+import numpy as np
+
 arr3 = np.random.uniform(0, 10, (2, 4))
 print("arr3:\n", arr3)
 ```
