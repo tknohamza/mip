@@ -163,7 +163,7 @@ pip install numpy
 ```
 
 > [!TIP]
-> use `command prompt` to download resources.
+> utiliser `command prompt` pour installer resources.
 
 
 1. Créez deux matrices mat1 et mat2 de forme (2, 2) avec des valeurs de votre choix.
@@ -228,7 +228,7 @@ pip install numpy
 ```
 
 > [!TIP]
-> use `command prompt` to download resources.
+> utiliser `command prompt` pour installer resources.
 
 
 1. Considérons le système d'équations linéaires suivant :
@@ -315,8 +315,10 @@ print("b =", b)
 > [!NOTE]
 > Il existe toujours une possibilité d'erreur, nous n'en assumons donc aucune responsabilité.
 
-> ## <a name="Copyright"></a> Copyright
-tknohamza © 2025
+</p>
+<h3 align="center">Copyright © 2025</h3>
+<p align="center">
+</p>
 
 > Merci de nous avoir contactés ici. Si vous avez des commentaires, n'hésitez pas à nous contacter :
 tknohamzacontact@gmail.com
