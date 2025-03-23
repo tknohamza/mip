@@ -10,7 +10,7 @@ Premièrement, installer :
 
 
 ```shell
-import numpy as np
+pip install numpy
 ```
 
 
@@ -19,7 +19,7 @@ import numpy as np
 
 
 </p>
-<h3 align="center">calcule du L & U</h3>
+<h3 align="center">L & U</h3>
 <p align="center">
 </p>
 
