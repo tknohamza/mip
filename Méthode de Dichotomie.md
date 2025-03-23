@@ -11,7 +11,7 @@ Premièrement, installer :
 
 
 ```shell
-import numpy as np
+pip install numpy
 ```
 
 
