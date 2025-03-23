@@ -72,13 +72,10 @@ print(U)
 > [!NOTE]
 > Il existe toujours une possibilité d'erreur, nous n'en assumons donc aucune responsabilité.
 
-
 </p>
-<h3 align="center">Copyright</h3>
+<h3 align="center">Copyright © 2025</h3>
 <p align="center">
 </p>
-
-tknohamza © 2025
 
 > Merci de nous avoir contactés ici. Si vous avez des commentaires, n'hésitez pas à nous contacter :
 tknohamzacontact@gmail.com
