@@ -1,8 +1,6 @@
 # Méthode de Newton
 
-
 ### <a name="objectifs"></a> objectifs
-
 
 > Calculez l'approximation de x par la méthode de newton.
 
