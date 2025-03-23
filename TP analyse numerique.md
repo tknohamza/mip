@@ -75,6 +75,7 @@ print("arr4:", arr4)
 ```shell
 import numpy as np
 
+arr3 = np.array([[1, 2, 3], [4, 5, 6]])
 print("Forme de arr3:", arr3.shape)
 print("Type de données de arr3:", arr3.dtype)
 print("Dimension de arr3:", arr3.ndim)
@@ -180,8 +181,6 @@ mat2 = np.array([[5, 6], [7, 8]])
 
 
 ```shell
-import numpy as np
-
 produit_mat = np.dot(mat1, mat2)
 print("Produit matriciel de mat1 et mat2 :\n", produit_mat)
 ```
@@ -190,8 +189,6 @@ print("Produit matriciel de mat1 et mat2 :\n", produit_mat)
 
 
 ```shell
-import numpy as np
-
 transposee_mat1 = mat1.T
 print("Transposée de mat1 :\n", transposee_mat1)
 ```
@@ -200,8 +197,6 @@ print("Transposée de mat1 :\n", transposee_mat1)
 
 
 ```shell
-import numpy as np
-
 determinant_mat2 = np.linalg.det(mat2)
 print("Déterminant de mat2 :", determinant_mat2)
 ```
@@ -210,8 +205,6 @@ print("Déterminant de mat2 :", determinant_mat2)
 
 
 ```shell
-import numpy as np
-
 inverse_mat2 = np.linalg.inv(mat2)
 print("Inverse de mat2 :\n", inverse_mat2)
 ```
@@ -259,8 +252,6 @@ Aaug = np.concatenate((A, b.reshape(-1, 1)), axis=1)
 
 
 ```shell
-import numpy as np
-
 def elimination_gauss(Aaug):
     n = len(Aaug)
     for i in range(n):
@@ -287,14 +278,15 @@ print("Matrice augmentée échelonnée :\n", Aaug_echelonnee)
 
 
 ```shell
-import numpy as np
-
 def substitution_arriere(Aaug_echelonnee):
     n = len(Aaug_echelonnee)
     x = np.zeros(n)
     for i in range(n - 1, -1, -1):
         x[i] = Aaug_echelonnee[i, n] - np.dot(Aaug_echelonnee[i, i + 1:n], x[i + 1:n])
     return x
+
+# Exemple de Aaug_echelonnee
+Aaug_echelonnee = np.array([[2, 1, 1, 10], [0, 3, 2, 18], [0, 0, 1, 6]])
 
 solution = substitution_arriere(Aaug_echelonnee)
 print("Solution du système :\n", solution)
