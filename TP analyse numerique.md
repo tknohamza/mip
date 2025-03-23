@@ -14,7 +14,7 @@ Premièrement, installer :
 
 
 ```shell
-import numpy as np
+pip install numpy
 ```
 
 
@@ -63,6 +63,8 @@ print("arr3:\n", arr3)
 
 
 ```shell
+import numpy as np
+
 arr4 = np.linspace(0, 100, 5)
 print("arr4:", arr4)
 ```
@@ -71,6 +73,8 @@ print("arr4:", arr4)
 
 
 ```shell
+import numpy as np
+
 print("Forme de arr3:", arr3.shape)
 print("Type de données de arr3:", arr3.dtype)
 print("Dimension de arr3:", arr3.ndim)
@@ -85,7 +89,7 @@ print("Dimension de arr3:", arr3.ndim)
 N'oubliez jamais d'installer :
 
 ```shell
-import numpy as np
+pip install numpy
 ```
 
 > [!TIP]
@@ -96,6 +100,8 @@ import numpy as np
 
 
 ```shell
+import numpy as np
+
 arr1 = np.arange(10)
 somme_arr1 = np.sum(arr1)
 print("Somme de arr1:", somme_arr1)
@@ -105,6 +111,8 @@ print("Somme de arr1:", somme_arr1)
 
 
 ```shell
+import numpy as np
+
 arr3 = np.random.uniform(0, 10, (2, 4))
 moyenne_arr3 = np.mean(arr3)
 print("Moyenne de arr3:", moyenne_arr3)
@@ -114,6 +122,8 @@ print("Moyenne de arr3:", moyenne_arr3)
 
 
 ```shell
+import numpy as np
+
 arr1 = np.arange(10)
 produit_arr1 = np.prod(arr1)
 print("Produit de arr1:", produit_arr1)
@@ -123,6 +133,8 @@ print("Produit de arr1:", produit_arr1)
 
 
 ```shell
+import numpy as np
+
 arr4 = np.linspace(0, 100, 5)
 racine_carree_arr4 = np.sqrt(arr4)
 print("Racine carrée de arr4:", racine_carree_arr4)
@@ -132,6 +144,8 @@ print("Racine carrée de arr4:", racine_carree_arr4)
 
 
 ```shell
+import numpy as np
+
 arr3 = np.random.uniform(0, 10, (2, 4))
 log_naturel_arr3 = np.log(arr3)
 print("Logarithme naturel de arr3:\n", log_naturel_arr3)
@@ -145,7 +159,7 @@ print("Logarithme naturel de arr3:\n", log_naturel_arr3)
 N'oubliez jamais d'installer :
 
 ```shell
-import numpy as np
+pip install numpy
 ```
 
 > [!TIP]
@@ -156,6 +170,8 @@ import numpy as np
 
 
 ```shell
+import numpy as np
+
 mat1 = np.array([[1, 2], [3, 4]])
 mat2 = np.array([[5, 6], [7, 8]])
 ```
@@ -164,6 +180,8 @@ mat2 = np.array([[5, 6], [7, 8]])
 
 
 ```shell
+import numpy as np
+
 produit_mat = np.dot(mat1, mat2)
 print("Produit matriciel de mat1 et mat2 :\n", produit_mat)
 ```
@@ -172,6 +190,8 @@ print("Produit matriciel de mat1 et mat2 :\n", produit_mat)
 
 
 ```shell
+import numpy as np
+
 transposee_mat1 = mat1.T
 print("Transposée de mat1 :\n", transposee_mat1)
 ```
@@ -180,6 +200,8 @@ print("Transposée de mat1 :\n", transposee_mat1)
 
 
 ```shell
+import numpy as np
+
 determinant_mat2 = np.linalg.det(mat2)
 print("Déterminant de mat2 :", determinant_mat2)
 ```
@@ -188,6 +210,8 @@ print("Déterminant de mat2 :", determinant_mat2)
 
 
 ```shell
+import numpy as np
+
 inverse_mat2 = np.linalg.inv(mat2)
 print("Inverse de mat2 :\n", inverse_mat2)
 ```
@@ -200,7 +224,7 @@ print("Inverse de mat2 :\n", inverse_mat2)
 N'oubliez jamais d'installer :
 
 ```shell
-import numpy as np
+pip install numpy
 ```
 
 > [!TIP]
@@ -214,6 +238,8 @@ import numpy as np
 
 
 ```shell
+import numpy as np
+
 mat1 = np.array([[1, 2], [3, 4]])
 mat2 = np.array([[5, 6], [7, 8]])
 ```
@@ -222,6 +248,8 @@ mat2 = np.array([[5, 6], [7, 8]])
 
 
 ```shell
+import numpy as np
+
 A = np.array([[2, 1, -1], [1, 3, 1], [1, -1, 2]])
 b = np.array([5, 7, 3])
 Aaug = np.concatenate((A, b.reshape(-1, 1)), axis=1)
@@ -231,6 +259,8 @@ Aaug = np.concatenate((A, b.reshape(-1, 1)), axis=1)
 
 
 ```shell
+import numpy as np
+
 def elimination_gauss(Aaug):
     n = len(Aaug)
     for i in range(n):
@@ -257,6 +287,8 @@ print("Matrice augmentée échelonnée :\n", Aaug_echelonnee)
 
 
 ```shell
+import numpy as np
+
 def substitution_arriere(Aaug_echelonnee):
     n = len(Aaug_echelonnee)
     x = np.zeros(n)
@@ -272,6 +304,8 @@ print("Solution du système :\n", solution)
 
 
 ```shell
+import numpy as np
+
 verification = np.dot(A, solution)
 print("Vérification : Ax =", verification)
 print("b =", b)
