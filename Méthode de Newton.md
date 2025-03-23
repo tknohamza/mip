@@ -11,7 +11,7 @@ Premièrement, installer :
 
 
 ```shell
-import numpy as np
+pip install numpy
 ```
 
 
@@ -75,8 +75,10 @@ print(f"L'estimation de f({x_eval}) est : {result:.6f}")
 > [!NOTE]
 > Il existe toujours une possibilité d'erreur, nous n'en assumons donc aucune responsabilité.
 
-## <a name="Copyright"></a> Copyright
-tknohamza © 2025
+</p>
+<h3 align="center">Copyright © 2025</h3>
+<p align="center">
+</p>
 
 > Merci de nous avoir contactés ici. Si vous avez des commentaires, n'hésitez pas à nous contacter :
 tknohamzacontact@gmail.com
