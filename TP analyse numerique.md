@@ -18,7 +18,7 @@ pip install numpy
 ```
 
 
-> [!TIP]
+> [!IMPORTANT]
 > utiliser `command prompt` pour installer resources.
 
 
@@ -87,15 +87,8 @@ print("Dimension de arr3:", arr3.ndim)
 <p align="center">
 </p>
 
-N'oubliez jamais d'installer :
-
-```shell
-pip install numpy
-```
-
 > [!TIP]
-> utiliser `command prompt` pour installer resources.
-
+> Assurez-vous que `numpy` est installé.
 
 1. Calculez la somme de tous les éléments de arr1.
 
@@ -157,14 +150,8 @@ print("Logarithme naturel de arr3:\n", log_naturel_arr3)
 <p align="center">
 </p>
 
-N'oubliez jamais d'installer :
-
-```shell
-pip install numpy
-```
-
 > [!TIP]
-> utiliser `command prompt` pour installer resources.
+> Assurez-vous que `numpy` est installé.
 
 
 1. Créez deux matrices mat1 et mat2 de forme (2, 2) avec des valeurs de votre choix.
@@ -214,14 +201,8 @@ print("Inverse de mat2 :\n", inverse_mat2)
 <p align="center">
 </p>
 
-N'oubliez jamais d'installer :
-
-```shell
-pip install numpy
-```
-
 > [!TIP]
-> utiliser `command prompt` pour installer resources.
+> Assurez-vous que `numpy` est installé.
 
 
 1. Considérons le système d'équations linéaires suivant :
