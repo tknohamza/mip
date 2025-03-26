@@ -4,10 +4,10 @@
 ### <a name="objectifs"></a> objectifs
 
 
->• Créer, afficher et manipuler des tableaux NumPy.
-• Utiliser des fonctions NumPy pour effectuer des opérations mathématiques avancées sur les tableaux.
-• Effectuer des opérations matricielles en utilisant NumPy.
-• Résoudre des systèmes d'équations linéaires en utilisant la méthode d'élimination de Gauss avec NumPy.
+> *Créer, afficher et manipuler des tableaux NumPy.
+* Utiliser des fonctions NumPy pour effectuer des opérations mathématiques avancées sur les tableaux.
+* Effectuer des opérations matricielles en utilisant NumPy.
+* Résoudre des systèmes d'équations linéaires en utilisant la méthode d'élimination de Gauss avec NumPy.
 
 
 Premièrement, installer :
