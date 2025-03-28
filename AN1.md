@@ -285,7 +285,7 @@ print("b =", b)
 ```
 
 
-> [!NOTE]
+> [!WARNING]
 > Il existe toujours une possibilité d'erreur, nous n'en assumons donc aucune responsabilité.
 
 </p>
