@@ -72,7 +72,7 @@ print(U)
 > [!NOTE]
 > Si :
 Matrice (n×n) est d'ordre 3 il faut remplacer A Par :
-> ```
+```
 # exemple :
 
 A = np.array([[2, -1, 4],
@@ -80,9 +80,9 @@ A = np.array([[2, -1, 4],
               [0, 3, -9]], dtype=float)
 ```
 
-> le même par d'ordre 2 :
+le même par d'ordre 2 :
 
-> ```
+```
 # exemple :
 
 A = np.array([[2, -1],
