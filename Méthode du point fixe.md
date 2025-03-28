@@ -65,6 +65,15 @@ else:
 ```
 
 > [!NOTE]
+La fonction f, g, h,... pour :
+x⁰ : x**0
+x¹ : x**1
+x² : x**2
+.
+.
+xⁿ : x**n
+
+> [!WARNING]
 > Il existe toujours une possibilité d'erreur, nous n'en assumons donc aucune responsabilité.
 
 </p>
