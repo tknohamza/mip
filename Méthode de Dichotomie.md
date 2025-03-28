@@ -60,7 +60,7 @@ def dichotomie(f, a, b, tol=1e-6, max_iter=100):
 
 # Exemple d'utilisation
 def f(x):
-    return x**3 - x - 1  # Fonction continue
+    return x**2 - 2  # Fonction continue
 
 a, b = 1, 2  # Intervalle contenant une racine
 
