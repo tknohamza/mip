@@ -70,7 +70,7 @@ print(f"L'estimation de f({x_eval}) est : {result:.6f}")
 # by : tknohamza
 ```
 
-> [!NOTE]
+> [!WARNING]
 > Il existe toujours une possibilité d'erreur, nous n'en assumons donc aucune responsabilité.
 
 </p>
