@@ -164,6 +164,10 @@ mat1 = np.array([[1, 2], [3, 4]])
 mat2 = np.array([[5, 6], [7, 8]])
 ```
 
+> [!NOTE]
+> Il convient de noter qu'il s'agit de données et que ce qui suit ne sont que des opérations. ( Ajoutez simplement les codes suivants à ce code de base )
+
+
 2. Calculez le produit matriciel de mat1 et mat2.
 
 
