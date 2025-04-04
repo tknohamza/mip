@@ -14,7 +14,7 @@ pip install numpy
 ```
 
 
-> [!TIP]
+> [!IMPORTANT]
 > utiliser `command prompt` pour installer resources.
 
 
