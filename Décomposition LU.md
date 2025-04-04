@@ -23,6 +23,9 @@ pip install numpy
 <p align="center">
 </p>
 
+> [!TIP]
+> Assurez-vous que `numpy` est installé.
+
 Vous devez vous assurer que le pivot soit toujours ≠ 0 :
 
 ```shell
