@@ -26,6 +26,8 @@ def lagrange_interpolation(x_values, y_values, x):
 
 # Exemple d'utilisation
 x_points = [1, 2, 3, 4]
+
+#tknohamza
 y_points = [2, 3, 5, 7]
 x_eval = 2.5
 
