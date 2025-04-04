@@ -13,7 +13,7 @@ pip install numpy
 ```
 
 
-> [!TIP]
+> [!IMPORTANT]
 > utiliser `command prompt` pour installer resources.
 
 
@@ -21,6 +21,9 @@ pip install numpy
 <h3 align="center">Newton</h3>
 <p align="center">
 </p>
+
+> [!TIP]
+> Assurez-vous que `numpy` est installé.
 
 Vous devez vous assurer que Xn donnée inclus dans [a,b]:
 
@@ -69,6 +72,8 @@ print(f"L'estimation de f({x_eval}) est : {result:.6f}")
 
 # by : tknohamza
 ```
+> [!NOTE]
+> Ce code contient des erreurs, veuillez éviter de l'utiliser jusqu'à plus tard.
 
 > [!WARNING]
 > Il existe toujours une possibilité d'erreur, nous n'en assumons donc aucune responsabilité.
