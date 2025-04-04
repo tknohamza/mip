@@ -14,8 +14,7 @@ Premièrement, installer :
 pip install numpy
 ```
 
-
-> [!TIP]
+> [!IMPORTANT]
 > utiliser `command prompt` pour installer resources.
 
 
@@ -23,6 +22,9 @@ pip install numpy
 <h3 align="center">La sécante</h3>
 <p align="center">
 </p>
+
+> [!TIP]
+> Assurez-vous que `numpy` est installé.
 
 Vous devez vous assurer que Xn et Xn+1 Donnée inclus dans [a,b]:
 
