@@ -130,8 +130,7 @@ print("Produit de arr1:", produit_arr1)
 import numpy as np
 
 arr4 = np.linspace(0, 100, 5)
-racine_carree_arr4 = np.sqrt(arr4)
-print("Racine carrée de arr4:", racine_carree_arr4)
+print("Racine carrée de arr4:", np.sqrt(arr4))
 ```
 
 5. Calculez le logarithme naturel de chaque élément de arr3.
