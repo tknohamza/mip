@@ -75,7 +75,7 @@ else:
 # by : tknohamza
 ```
 
-> [!NOTE 2]
+> [!NOTE1]
 > La fonction f, g, h,... en remplace xⁿ par :
 ```
 x⁰ : x**0
@@ -86,7 +86,7 @@ x² : x**2
 xⁿ : x**n
 ```
 
-> [!NOTE 2]
+> [!NOTE2]
 La fonction f, g, h,... en remplace xⁿ par :
 ```
 A*x**n avec A : coefficient Xⁿ
