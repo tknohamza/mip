@@ -199,6 +199,28 @@ inverse_mat2 = np.linalg.inv(mat2)
 print("Inverse de mat2 :\n", inverse_mat2)
 ```
 
+6. Final response.
+
+```shell
+import numpy as np
+
+mat1 = np.array([[1,2] , [3,4]])
+mat2 = np.array([[5,6] , [7,8]])
+
+produit_mat = np.dot(mat1, mat2)
+print("1. Produit matriciel de mat1 et mat2 :\n", produit_mat)
+
+transposee_mat1 =mat1.T
+print("2. transposee de mat1 :\n",transposee_mat1)
+
+determinant_mat2 = np.linalg.det (mat2)
+print("3. determinant de mat2 :", determinant_mat2)
+
+inverse_mat2 = np.linalg.inv(mat2)
+print("4. inverse de mat2 :\n", inverse_mat2)
+```
+
+
 </p>
 <h3 align="center">Exercice 4 : Résolution de systèmes d'équations linéaires par la méthode d'élimination de Gauss</h3>
 <p align="center">
@@ -285,6 +307,62 @@ import numpy as np
 verification = np.dot(A, solution)
 print("Vérification : Ax =", verification)
 print("b =", b)
+```
+
+6.Final Response.
+
+
+```shell
+import numpy as np
+
+mat1 = np.array([[1,2] , [3,4]])
+mat2 = np.array([[5,6] , [7,8]])
+
+
+A = np.array([[2, 1, -1], [1, 3, 1], [1, -1, 2]])
+b = np.array([5, 7, 3])
+Aaug = np.concatenate((A, b.reshape(-1, 1)), axis=1)
+
+
+def elimination_gauss(Aaug):
+    n = len(Aaug)
+    for i in range(n):
+        
+        if Aaug[i, i] == 0:
+            for j in range(i + 1, n):
+                if Aaug[j, i] != 0:
+                    Aaug[[i, j]] = Aaug[[j, i]]
+                    break
+                
+        pivot = Aaug[i, i]
+        Aaug[i] = Aaug[i] / pivot
+        
+        for j in range(i + 1, n):
+            facteur = Aaug[j, i]
+            Aaug[j] = Aaug[j] - facteur * Aaug[i]
+    return Aaug
+
+
+Aaug_echelonnee = elimination_gauss(Aaug.copy())
+print("1. Matrice augmentée échelonnée :\n", Aaug_echelonnee)
+
+def substitution_arriere(Aaug_echelonnee):
+    n = len(Aaug_echelonnee)
+    x = np.zeros(n)
+    for i in range(n - 1, -1, -1):
+        x[i] = Aaug_echelonnee[i, n] - np.dot(Aaug_echelonnee[i, i + 1:n], x[i + 1:n])
+    return x
+
+
+Aaug_echelonnee = np.array([[2, 1, 1, 10], [0, 3, 2, 18], [0, 0, 1, 6]])
+
+solution = substitution_arriere(Aaug_echelonnee)
+print("2. Solution du système :\n", solution)
+
+
+verification = np.dot(A, solution)
+print("3. Vérification : Ax =", verification)
+print("4. b =", b)
 ```
 
 
