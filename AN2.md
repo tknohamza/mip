@@ -1,4 +1,4 @@
-les exercices du TP2 – Analyse numérique :
+# les exercices du TP2 – Analyse numérique :
 
 
 ---
@@ -69,6 +69,3 @@ print("Simpson:", integration_simpson(f, a, b, n))
 ```
 
 ---
-
-Si tu veux les sorties exactes ou une visualisation graphique, je peux les générer aussi. Tu veux que je le fasse ?
-
