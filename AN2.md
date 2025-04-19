@@ -5,7 +5,7 @@ les exercices du TP2 – Analyse numérique :
 
 Exercice 1 : Interpolation de Newton
 
-shell```
+```shell
 import numpy as np
 
 def differences_divisees(x, y):
