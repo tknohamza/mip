@@ -66,8 +66,6 @@ print("Trapèzes:", integration_trapeze(f, a, b, n))
 print("Simpson:", integration_simpson(f, a, b, n))
 ```
 
----
-
 > [!WARNING]
 > Il existe toujours une possibilité d'erreur, nous n'en assumons donc aucune responsabilité.
 
