@@ -39,9 +39,6 @@ x_eval = 1.5
 val = evaluer_polynome_direct(x_points, coeffs, x_eval)
 print(f"P({x_eval}) = {val}")
 
-Résultat attendu : Coefficients = [1, 1, 1], donc le polynôme est P(x) = 1 + x + x(x-1).
-
-
 ---
 
 Exercice 2 : Intégration numérique
