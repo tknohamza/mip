@@ -1,12 +1,11 @@
-Voici les grandes lignes des réponses attendues pour les exercices du TP2 – Analyse numérique avec NumPy :
+les exercices du TP2 – Analyse numérique :
 
 
 ---
 
 Exercice 1 : Interpolation de Newton
 
-1. Fonction differences_divisees(x, y) :
-
+shell```
 import numpy as np
 
 def differences_divisees(x, y):
@@ -16,8 +15,6 @@ def differences_divisees(x, y):
         coef[j:n] = (coef[j:n] - coef[j-1:n-1]) / (x[j:n] - x[0:n-j])
     return coef
 
-2. Fonction evaluer_polynome_direct(x_points, coeffs, x) :
-
 def evaluer_polynome_direct(x_points, coeffs, x):
     n = len(coeffs)
     result = coeffs[-1]
@@ -25,18 +22,15 @@ def evaluer_polynome_direct(x_points, coeffs, x):
         result = result * (x - x_points[i]) + coeffs[i]
     return result
 
-3. Application aux points (0, 1), (1, 2), (2, 5) :
-
 x_points = np.array([0, 1, 2])
 y_points = np.array([1, 2, 5])
 coeffs = differences_divisees(x_points, y_points)
-print("Coefficients:", coeffs)
+print("1&2.Coefficients:", coeffs)
 
 x_eval = 1.5
 val = evaluer_polynome_direct(x_points, coeffs, x_eval)
-print(f"P({x_eval}) = {val}")
-
-Résultat attendu : Coefficients = [1, 1, 1], donc le polynôme est P(x) = 1 + x + x(x-1).
+print(f"3.P({x_eval}) = {val}")
+```
 
 
 ---
