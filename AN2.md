@@ -1,8 +1,6 @@
 # TP2 – Analyse numérique :
 
 
----
-
 Exercice 1 : Interpolation de Newton
 
 ```shell
