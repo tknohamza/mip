@@ -6,7 +6,7 @@ Exercice 1 : Interpolation de Newton
 ```shell
 import numpy as np
 
-# Function to compute divided differences
+# Fonction pour calculer les différences divisées
 def differences_divisees(x, y):
     n = len(y)
     coef = np.copy(y).astype(float)
@@ -14,7 +14,7 @@ def differences_divisees(x, y):
         coef[j:n] = (coef[j:n] - coef[j-1:n-1]) / (x[j:n] - x[0:n-j])
     return coef
 
-# Function to evaluate the Newton polynomial
+# Fonction pour évaluer le polynôme de Newton
 def evaluer_polynome_direct(x_points, coeffs, x):
     n = len(coeffs)
     result = coeffs[-1]
@@ -22,7 +22,7 @@ def evaluer_polynome_direct(x_points, coeffs, x):
         result = result * (x - x_points[i]) + coeffs[i]
     return result
 
-# Example: Applying the functions
+#exemple
 x_points = np.array([0, 1, 2])
 y_points = np.array([1, 2, 5])
 coeffs = differences_divisees(x_points, y_points)
