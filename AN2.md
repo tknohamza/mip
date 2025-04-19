@@ -1,6 +1,3 @@
-# TP2
-
-
 Voici les grandes lignes des réponses attendues pour les exercices du TP2 – Analyse numérique avec NumPy :
 
 
@@ -8,84 +5,38 @@ Voici les grandes lignes des réponses attendues pour les exercices du TP2 – A
 
 Exercice 1 : Interpolation de Newton
 
+1. Fonction differences_divisees(x, y) :
+
 import numpy as np
 
 def differences_divisees(x, y):
-  """
-  Calcule les coefficients des différences divisées de Newton.
+    n = len(y)
+    coef = np.copy(y).astype(float)
+    for j in range(1, n):
+        coef[j:n] = (coef[j:n] - coef[j-1:n-1]) / (x[j:n] - x[0:n-j])
+    return coef
 
-  Args:
-    x: Liste ou array NumPy des abscisses des points.
-    y: Liste ou array NumPy des ordonnées des points.
+2. Fonction evaluer_polynome_direct(x_points, coeffs, x) :
 
-  Returns:
-    Array NumPy contenant les coefficients (f[x0], f[x0,x1], ...).
-  """
-  n = len(y)
-  coeffs = np.copy(y).astype(float)
-  for j in range(1, n):
-    # La boucle interne calcule chaque différence divisée d'ordre j
-    # Elle va de la dernière différence possible vers la première pour éviter d'écraser les valeurs nécessaires
-    for i in range(n - 1, j - 1, -1):
-      coeffs[i] = (coeffs[i] - coeffs[i-1]) / (x[i] - x[i-j])
-  # Les coefficients sont les éléments coeffs[0], coeffs[1], ..., coeffs[n-1] après calculs
-  # Mais comme on a modifié coeffs en place de manière descendante,
-  # les coefficients finaux sont coeffs[j] pour l'ordre j.
-  # Plus simplement, la diagonale supérieure du tableau implicite:
-  # f[x0], f[x0,x1], f[x0,x1,x2], ... sont coeffs[0], coeffs[1], coeffs[2], ...
-  # après que la boucle externe pour j=1 ait calculé coeffs[1], coeffs[2], ...
-  # et que la boucle pour j=2 ait calculé coeffs[2], coeffs[3], ... etc.
-  # Donc, les coefficients retournés sont bien ceux de la première ligne du tableau usuel.
-  return coeffs # Renvoie le tableau complet, les coeffs sont la diagonale coeffs[0], coeffs[1]...coeffs[n-1]
+def evaluer_polynome_direct(x_points, coeffs, x):
+    n = len(coeffs)
+    result = coeffs[-1]
+    for i in range(n-2, -1, -1):
+        result = result * (x - x_points[i]) + coeffs[i]
+    return result
 
-def evaluer_polynome_direct(x_points, coeffs, x_eval):
-  """
-  Évalue le polynôme de Newton en utilisant les coefficients des différences divisées.
+3. Application aux points (0, 1), (1, 2), (2, 5) :
 
-  Args:
-    x_points: Liste ou array NumPy des abscisses des points d'interpolation.
-    coeffs: Liste ou array NumPy des coefficients des différences divisées (calculés par differences_divisees).
-    x_eval: Le point (ou array de points) où évaluer le polynôme.
-
-  Returns:
-    La valeur du polynôme au(x) point(s) x_eval.
-  """
-  n = len(coeffs) - 1
-  # Utilise la méthode de Horner imbriquée pour l'évaluation
-  P = coeffs[n]
-  for k in range(n - 1, -1, -1):
-    P = coeffs[k] + (x_eval - x_points[k]) * P
-  return P
-
-# Application à l'exemple donné
 x_points = np.array([0, 1, 2])
 y_points = np.array([1, 2, 5])
+coeffs = differences_divisees(x_points, y_points)
+print("Coefficients:", coeffs)
 
-# 1. Calculer les coefficients
-coefficients = differences_divisees(x_points, y_points)
-print(f"Points x: {x_points}")
-print(f"Points y: {y_points}")
-print(f"Coefficients des différences divisées: {coefficients}")
-# Note: Le tableau retourné contient plus que les coefficients diagonaux.
-# Les coefficients du polynôme P(x) = c0 + c1(x-x0) + c2(x-x0)(x-x1) + ...
-# sont la *première ligne* du tableau des différences divisées,
-# qui sont f[x0], f[x0,x1], f[x0,x1,x2], ...
-# Dans notre implémentation, ces coefficients correspondent à coeffs[0], coeffs[1], ..., coeffs[n-1].
-coeffs_polynome = np.diag(np.fliplr(coefficients.reshape(-1,1))) # Extrait la diagonale principale f[x0], f[x0,x1]..
-coeffs_polynome = coefficients # L'implémentation retourne déjà les bons coefficients dans l'ordre
+x_eval = 1.5
+val = evaluer_polynome_direct(x_points, coeffs, x_eval)
+print(f"P({x_eval}) = {val}")
 
-print(f"Les coefficients du polynôme P(x) = c0 + c1(x-x0) + c2(x-x0)(x-x1) sont: {coeffs_polynome}")
-# Vérification (exemple du PDF): Les coefficients sont f[0]=1, f[0,1]=1, f[0,1,2]=1 
-
-# 2. Évaluer le polynôme (par exemple en x=1.5)
-x_a_evaluer = 1.5
-valeur_polynome = evaluer_polynome_direct(x_points, coeffs_polynome, x_a_evaluer)
-print(f"La valeur du polynôme interpolateur en x = {x_a_evaluer} est: {valeur_polynome}")
-
-# Vérification manuelle pour x=1.5:
-# P(x) = 1 + 1*(x-0) + 1*(x-0)*(x-1)
-# P(1.5) = 1 + 1*(1.5) + 1*(1.5)*(0.5) = 1 + 1.5 + 0.75 = 3.25
-print(f"Vérification manuelle pour P(1.5): 1 + 1*(1.5) + 1*(1.5)*(0.5) = {1 + 1*(1.5) + 1*(1.5)*(0.5)}")
+Résultat attendu : Coefficients = [1, 1, 1], donc le polynôme est P(x) = 1 + x + x(x-1).
 
 
 ---
@@ -129,3 +80,4 @@ Simpson ≈ 0.333 (exact pour un polynôme de degré ≤ 2)
 ---
 
 Si tu veux les sorties exactes ou une visualisation graphique, je peux les générer aussi. Tu veux que je le fasse ?
+
