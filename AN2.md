@@ -1,4 +1,4 @@
-# les exercices du TP2 – Analyse numérique :
+# TP2 – Analyse numérique :
 
 
 ---
@@ -69,3 +69,16 @@ print("Simpson:", integration_simpson(f, a, b, n))
 ```
 
 ---
+
+> [!WARNING]
+> Il existe toujours une possibilité d'erreur, nous n'en assumons donc aucune responsabilité.
+
+</p>
+<h3 align="center">Copyright © 2025</h3>
+<p align="center">
+</p>
+
+> Merci de nous avoir contactés ici. Si vous avez des commentaires, n'hésitez pas à nous contacter :
+tknohamzacontact@gmail.com
+N'oubliez pas de nous suivre sur :
+<a href="https://facebook.com/tknohamza">Facebook</a>, <a href="https://instagram.com/r/tknohamza">Instagram</a>, <a href="https://twitter.com/tknohamza">Twitter</a>, <a href="https://t.me/tknohamzachannel">Telegram</a>
