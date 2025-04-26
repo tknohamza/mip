@@ -16,6 +16,10 @@ Premièrement, installer :
 ```shell
 pip install numpy
 ```
+or
+```shell
+!pip install numpy
+```
 
 
 > [!IMPORTANT]
