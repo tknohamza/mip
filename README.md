@@ -1,11 +1,13 @@
+<div dir="rtl">
+
 </p>
 <h3 align="center">Analyse Numerique </h3>
 <p align="center">
 </p>
 
-> MIP - GTI: Génie des Technologies Industrielles
+> MIP - GTI: هندسة التكنولوجيا الصناعية
 
-### <a name="Definition"></a> Definition
+### <a name="تعريف"></a> تعريف
 
 > التحليل العددي هو فرع من فروع الرياضيات يُعنى بتطوير ودراسة الخوارزميات من أجل حل المشكلات الرياضية بشكل تقريبي، وغالبًا بمساعدة الحاسوب.
 يهتم هذا الفرع على وجه الخصوص بحل المعادلات غير الخطية، وتقريب الدوال، والتكامل العددي، وحل أنظمة المعادلات الخطية والتفاضلية، بالإضافة إلى مسائل التحسين (التحسين الأمثل).
@@ -40,6 +42,7 @@ tknohamzacontact@gmail.com
 لا تنسوا متابعتنا على:
 <a href="https://facebook.com/tknohamza">Facebook</a>, <a href="https://instagram.com/r/tknohamza">Instagram</a>, <a href="https://twitter.com/tknohamza">Twitter</a>, <a href="https://t.me/tknohamzachannel">Telegram</a>
 
+</div>
 
 ---
 
