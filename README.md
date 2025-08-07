@@ -43,7 +43,7 @@ N'oubliez pas de nous suivre sur :
 <div dir="rtl">
 
 </p>
-<h3 align="center">Analyse Numerique </h3>
+<h3 align="center">التحليل العددي  </h3>
 <p align="center">
 </p>
 
