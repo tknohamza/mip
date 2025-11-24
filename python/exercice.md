@@ -29,9 +29,8 @@ class Car:
     def __init__(self, brand, fuel, model: str, price: float):
         self.brand, self.fuel, self.model, self.price = brand, fuel, model, price
 
-    def main():
-       cars = []
-
+def main():
+    cars = []
 
     print(" SAISIE DES INFORMATIONS (2 Voitures): ")
 
@@ -43,7 +42,7 @@ class Car:
     
         while True:
             try:
-                price = float(input("Entrez le prix : "))
+                price = float(input("Entrez le prix DH : "))
                 break
             except ValueError:
                 print("Erreur : entrer un nombre valide pour le prix.")
