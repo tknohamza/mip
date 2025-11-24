@@ -62,7 +62,7 @@ def main():
     print("\n RECHERCHE : ")
     while True:
         search_brand = input("Entrez la marque à rechercher : ")
-        search_fuel = input("Entrez le type de carburant à rechercher : ")
+        search_fuel = input("Entrez le type de carburant à rechercher (Diesel/Essence) : ")
         
         found = False
         for car in cars:
