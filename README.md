@@ -30,7 +30,7 @@ L'analyse numérique offre de nombreux avantages, en particulier dans les applic
 Grâce à l'analyse numérique, il est possible de résoudre des problèmes du monde réel avec précision et efficacité, en faisant d’elle un outil incontournable dans la recherche et le développement.
 
 
-### <a name="Copyright©2025"></a> Copyright © 2025
+### <a name="Copyright©2025"></a> Copyright © 2026
 
 
 > Merci de nous avoir contactés ici. Si vous avez des commentaires, n'hésitez pas à nous contacter :
@@ -76,7 +76,7 @@ N'oubliez pas de nous suivre sur :
 بفضل التحليل العددي، أصبح من الممكن حل مشكلات العالم الحقيقي بدقة وكفاءة، مما يجعله أداة لا غنى عنها في البحث والتطوير.
 
 
-### <a name="حقوق الطبع والنشر©2025"></a> حقوق الطبع و النشر © 2025
+### <a name="حقوق الطبع والنشر©2025"></a> حقوق الطبع و النشر © 2026
 
 
 > شكرًا لتواصلكم معنا هنا. إذا كانت لديكم أي ملاحظات، لا تترددوا في الاتصال بنا:
